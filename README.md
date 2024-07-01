@@ -22,3 +22,12 @@ Ans: A lazy copy can be defined as a combination of both shallow copy and deep c
 
 5. **What is Java Heap?**
 Ans. In Java, a heap is a chunk of memory which is shared among all threads. In a heap, all class instances and the array is allocated. It is created when JVM starts-up. An automatic storage management system reclaims heap.
+
+6. **What is the difference between HashMap and HashTable?**
+   
+   Ans: i. Hashtable is synchronized, whereas HashMap is not. This makes HashMap better for non-threaded applications, as unsynchronized Objects typically perform better than synchronized ones.
+   
+   ii. Hashtable does not allow null keys or values. HashMap allows one null key and any number of null values.
+   
+   iii. One of HashMap's subclasses is LinkedHashMap, so in the event that you'd want predictable iteration order (which is insertion order by default), you could easily swap out the HashMap               for a LinkedHashMap. This wouldn't be as easy if you were using Hashtable.
+
